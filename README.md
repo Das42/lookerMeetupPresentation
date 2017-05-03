@@ -18,9 +18,9 @@ Before running the code you will need to create a YAML config file called config
 
 ```YAML
 connection:
-	id: <your API id>
-	secret: <your API key>
-	endpoint: <your looker api endpoint>
+  id: <your API id>
+  secret: <your API key>
+  endpoint: <your looker api endpoint>
 ```
 
 ## Use
