@@ -6,17 +6,16 @@ The main event is the jupyter notebook that contains the example code. There are
 
 ## Setup
 
-This repo contains a python virtualenv that contains all required packages. Clone this repo into a local directory, navigate to it, and run the following to activate the virtualenv:
+To run this notebook you will need a few things:
 
-`source ./lookAPI/bin/activate`
+1. Python, 2.7 or later (I only tested on python3 but should work with 2.7 as well)
+2. A swagger-generated Looker API Python SDK. You can read a great tutorial [here](https://discourse.looker.com/t/generating-client-sdks-for-the-looker-api/3185)
+3. I strongly recommend setting up a virtualenv. You can read more [here](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/)
+4. The pyYAML package and the jupyter package, both installable with pip.
 
-You will obviously need Python and, if you don't have it already, virtualenv. A good overview and setup guide can be found [here](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/)
+Once your environment is set up, fire up a jupyter session with `jupyter notebook` and select the notebook in the browser.
 
-Once the environment is activated you can activate jupyter:
-
-`jupyter notebook`
-
-Before running the code you will need to create a YAML config file called config.yml with the following structure:
+Note: Before running the code you will need to create a YAML config file called config.yml with the following structure:
 
 ```YAML
 connection:
